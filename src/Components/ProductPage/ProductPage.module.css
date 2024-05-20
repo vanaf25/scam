@@ -1,0 +1,28 @@
+.page__section{
+margin-top: 20px;
+}
+.section__title{
+    text-align: center;
+}
+.section__content_1{
+    display: flex;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section__content_1 .section__text{
+    flex: 1 1 500px;
+    align-self: center;
+}
+.section__image{
+    align-self: center;
+    margin-right: 10px;
+    flex:  1 1 625px;
+    position: relative;
+}
+.section__image img{
+    max-width: 100%;
+}
+p{
+    font-size: 18px;
+}

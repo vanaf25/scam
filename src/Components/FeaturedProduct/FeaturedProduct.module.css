@@ -1,0 +1,27 @@
+.page__section{
+
+}
+.section__title{
+    text-align: center;
+}
+.section__content_1{
+    display: flex;
+    flex-wrap: wrap;
+}
+.section__content_1 .section__text{
+    flex: 0 1 500px;
+    align-self: center;
+    margin-right: 10px;
+}
+.section__image{
+    align-self: center;
+    flex:0 1 735px;
+
+}
+.section__image img{
+    max-width: 100%;
+}
+p{
+    font-size: 18px;
+    font-family: 'Roboto',Arial,sans-serif;
+}

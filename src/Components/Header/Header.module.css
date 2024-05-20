@@ -1,0 +1,35 @@
+/* Header.module.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+
+.title {
+    font-size: 36px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.page {
+    padding: 14px 24px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}

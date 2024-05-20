@@ -1,0 +1,6 @@
+.bar{
+    flex:0 0 30%;
+    min-height: 700px;
+   background: #EAEED9;
+    padding: 10px;
+}
