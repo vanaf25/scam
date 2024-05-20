@@ -12,7 +12,7 @@ const FeaturedProduct = () => {
                                 <CardMedia
                                     component="img"
                                     height="640"
-                                    image={"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Hitler_portrait_crop.jpg/274px-Hitler_portrait_crop.jpg"}
+                                    image={"https://i.pinimg.com/originals/30/98/13/309813ecbdd6a5f7296eb675b09429de.jpg"}
                                     alt="green iguana"
                                 />
                                 <CardContent sx={{bg:"white"}} >

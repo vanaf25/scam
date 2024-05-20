@@ -17,16 +17,16 @@ const FeaturedProduct = () => {
             <Box sx={{mt:1}}>
                 <Grid  container spacing={{xs: 2, md: 3}} columns={{xs: 4, sm: 8, md: 12}}>
                     <Grid item xs={4} sm={8} md={7}>
-                        <Card className={styles.section__image} sx={{border:"0"}}>
+                        <Box className={styles.section__image} sx={{border:"0"}}>
                             <Box>
                                 <CardMedia
                                     component="img"
                                     height="500"
-                                    image={"https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Hitler_portrait_crop.jpg/274px-Hitler_portrait_crop.jpg"}
+                                    image={"https://i.pinimg.com/originals/30/98/13/309813ecbdd6a5f7296eb675b09429de.jpg"}
                                     alt="green iguana"
                                 />
                             </Box>
-                        </Card>
+                        </Box>
                     </Grid>
                     <Grid item xs={4} sm={8} md={5}>
                         <div className={styles.section__text}>

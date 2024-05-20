@@ -16,7 +16,7 @@ import Typography from '@mui/material/Typography';
 import Navbar from "../NavBar/Navbar";
 import {Button} from "@mui/material";
 
-const drawerWidth = 360;
+const drawerWidth = 300;
 
 function ResponsiveDrawer(props) {
     const { window } = props;
@@ -46,11 +46,19 @@ function ResponsiveDrawer(props) {
     const container = window !== undefined ? () => window().document.body : undefined;
 
     return (
+        <>
             <Box
                 component="nav"
                 sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
                 aria-label="mailbox folders"
             >
+                <Button sx={{display:{
+                        xs:"block",
+                        sm:"block",
+                        md:"none",
+                        lg:"none",
+                        xl:"none",
+                    }}}  onClick={()=>setMobileOpen(true)}>Open</Button>
                 <Drawer
                     container={container}
                     variant="temporary"
@@ -62,7 +70,7 @@ function ResponsiveDrawer(props) {
                     }}
                     sx={{
                         position:mobileOpen ? "fixed":"relative",
-                        display: { xs: 'block', sm: 'none' },
+                        display: { sm: 'block', md: 'none' },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box',
                             position:mobileOpen ? "fixed":"relative",
                             width: drawerWidth },
@@ -74,7 +82,7 @@ function ResponsiveDrawer(props) {
                     variant="permanent"
                     sx={{
                         position:mobileOpen ? "fixed":"relative",
-                        display: { xs: 'none', sm: 'block' },
+                        display: { sm: 'none', md: 'block' },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box',
                             position:mobileOpen ? "fixed":"relative",
                             width: drawerWidth },
@@ -84,6 +92,8 @@ function ResponsiveDrawer(props) {
                     {drawer}
                 </Drawer>
             </Box>
+        </>
+
     );
 }
 export default ResponsiveDrawer;

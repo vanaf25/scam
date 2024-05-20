@@ -11,7 +11,13 @@ const Main = () => {
         <>
             <Banner/>
             <Container>
-                <Box sx={{display:"flex",marginBottom:10,}}>
+                <Box sx={{display:{
+                    xs:"block",
+                    sm:"block",
+                    md:"flex",
+                    lg:"flex",
+                    xl:"flex",
+                },marginBottom:10}}>
                     <SideBar/>
                     <Cards/>
                 </Box>
