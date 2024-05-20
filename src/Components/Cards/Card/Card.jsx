@@ -7,7 +7,7 @@ const CardComponent = () => {
                 <CardMedia
                     component="img"
                     height="235"
-                    image="https://s3-alpha-sig.figma.com/img/65d6/8f72/4f70b8f021d5f479cd5eb6004696c267?Expires=1716163200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BMzc~0Qfa3T0m7TyJE9RySKUPHuFOJh5IgE5xmd8DCNV2yvpbyeq4N9IOEjPkrjb0iISFgDFQcKJDbQc9jPa91JIXHbdO2jU6Zp1TdP7Wngz84viGD3H~mxFL6i-FGwOLH-1AI1fZJzbJ6huqnMLPZokVt0XvCt-gWdAgPdNko3D-NM14rQk4KT5asFMfBCrNIyXvO0Trn-URUkXU4GlmbY44aJ1yRJkRrIuvmedqsb8EVNWDlUZCZb3dMjUXvg9IjAy6Q0XQkiff22WRnID41sgHclllmAlQOqiBHmPe3vyUlJ5XgtENgvIU8MVEuvKAyp0BvEYeAuY3o~ZA7Wz8w__"
+                    image="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Nazi_Swastika.svg/langru-200px-Nazi_Swastika.svg.png"
                     alt="green iguana"
                 />
                 <CardContent >
