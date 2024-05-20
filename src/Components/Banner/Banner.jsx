@@ -5,7 +5,6 @@ import styles from './Banner.module.css';
 import {Box} from "@mui/material";
 import BlackButton, {BlackButton2} from "../../common/BlackButton/BlackButton";
 import Container from "../../common/Container/Container";
-
 const CustomElement = () => {
     return (
         <Container>
