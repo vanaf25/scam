@@ -70,7 +70,7 @@ function ResponsiveDrawer(props) {
                     }}
                     sx={{
                         position:mobileOpen ? "fixed":"relative",
-                        display: { sm: 'block', md: 'none' },
+                        display: {xs:"block", sm: 'block', md: 'none' },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box',
                             position:mobileOpen ? "fixed":"relative",
                             width: drawerWidth },
@@ -82,7 +82,7 @@ function ResponsiveDrawer(props) {
                     variant="permanent"
                     sx={{
                         position:mobileOpen ? "fixed":"relative",
-                        display: { sm: 'none', md: 'block' },
+                        display: {xs:"none", sm: 'none', md: 'block' },
                         '& .MuiDrawer-paper': { boxSizing: 'border-box',
                             position:mobileOpen ? "fixed":"relative",
                             width: drawerWidth },
