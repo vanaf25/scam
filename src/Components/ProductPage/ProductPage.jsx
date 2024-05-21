@@ -11,7 +11,7 @@ const ColorButton = styled(Button)(({ theme }) => ({
     },
 }));
 
-const FeaturedProduct = () => {
+const FeaturedProduct = ({imageUrl,title,description,price,text,additional,subHeading}) => {
     return (
         <Container>
             <Box sx={{mt:1}}>
@@ -22,7 +22,7 @@ const FeaturedProduct = () => {
                                 <CardMedia
                                     component="img"
                                     height="500"
-                                    image={"https://i.pinimg.com/originals/30/98/13/309813ecbdd6a5f7296eb675b09429de.jpg"}
+                                    image={imageUrl}
                                     alt="green iguana"
                                 />
                             </Box>
@@ -30,22 +30,15 @@ const FeaturedProduct = () => {
                     </Grid>
                     <Grid item xs={4} sm={8} md={5}>
                         <div className={styles.section__text}>
-                            <h2 className={styles.sectionTitle}>Welcome to Angular!</h2>
-                            <Typography sx={{fontSize: 24, color: "#828282"}}>Subheading</Typography>
+                            <h2 className={styles.sectionTitle}>{title}</h2>
+                            <Typography sx={{fontSize: 24, color: "#828282"}}>{subHeading}</Typography>
                             <p className={styles.sectionP}>
-                                <strong>Angular:</strong> This is an indispensable service for those who value tasty,
-                                satisfying, and high-quality food, but do not have enough time to prepare it. The varied
-                                menu that you can find on our website will provide you with a wide range of dishes: from
-                                traditional Ukrainian borscht according to old home recipes to a spicy and sophisticated
-                                salmon salad. Now your table depends not on your capabilities, but on your choice.
+                                {description}
                             </p>
-                            <Typography>11£</Typography>
-                            <Typography sx={{color: "#828282", mb: 1}}>Body text for describing why this product is simply a
-                                must-buy</Typography>
+                            <Typography>{price}£</Typography>
+                            <Typography sx={{color: "#828282", mb: 1}}>{text}</Typography>
                             <ColorButton fullWidth sx={{mb: 1}}>Add</ColorButton>
-                            <Typography sx={{fontSize: 16, color: "#828282"}}>Text box for additional details or fine
-                                print</Typography>
-
+                            <Typography sx={{fontSize: 16, color: "#828282"}}>{additional}</Typography>
                         </div>
                     </Grid>
                 </Grid>
